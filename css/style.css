@@ -1,0 +1,129 @@
+html{
+    margin: 0;
+    height: 100%;
+}
+*{
+    font-family: 'Kanit', sans-serif !important;
+}
+
+.btn-space {
+    margin-right: 5px;
+    
+}
+
+.tx-size {
+    font-size: 16px;
+    width: 180px;
+    border: 0px solid;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+   }
+
+
+
+  .navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 5.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+.formtitle{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.maintable{
+    text-align: center;
+}
+
+.mc3{
+    margin: auto;
+    width: 70%;
+    border: 3px solid rgb(142, 168, 142);
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+}
+
+
+.card-img-overlay{
+    height: 90px !important;
+}
+
+
+
+.table-responsive {
+    max-height:300px;
+}
+
+.imgnpost {
+    text-align: center;
+}
+
+.container {
+	width: 70%;
+	padding: 2em;
+}
+.card-header{
+    font-size: 25px;
+}
+.card-img{
+    border-radius: 0% !important;
+}
+
+
+
+
+.mecard{
+    width: 100%;
+}
+
+footer{
+    position: sticky;
+    top: calc( 110vh - 100px );
+    text-align: center;
+    color: aliceblue;
+    padding-top: 20px;
+    height: 70px;
+    background-color: rgb(38, 36, 73);
+}
