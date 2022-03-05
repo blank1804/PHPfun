@@ -34,10 +34,6 @@ body {
     box-shadow: 0 2px 4px rgba(0,0,0,.04);
 }
 
-.navbar-brand , .nav-link, .my-form, .login-form
-{
-    font-family: Raleway, sans-serif;
-}
 
 .my-form
 {
@@ -90,8 +86,6 @@ body {
     height: 90px !important;
 }
 
-
-
 .table-responsive {
     max-height:300px;
 }
@@ -100,30 +94,23 @@ body {
     text-align: center;
 }
 
-.container {
-	width: 70%;
-	padding: 2em;
-}
-.card-header{
-    font-size: 25px;
-}
-.card-img{
-    border-radius: 0% !important;
-}
 
 
+.html::-webkit-scrollbar {
+    display: none;
+  }
+  .html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
-
-.mecard{
-    width: 100%;
-}
-
-footer{
-    position: sticky;
-    top: calc( 110vh - 100px );
-    text-align: center;
-    color: aliceblue;
-    padding-top: 20px;
-    height: 70px;
-    background-color: rgb(38, 36, 73);
-}
+  .page-section .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    .page-section .page-section-heading {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }

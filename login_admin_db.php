@@ -30,7 +30,7 @@
                     if ($admin_email == $row['admin_email']) {
                         if (($admin_password == $row['admin_password'])) {
                             $_SESSION['admin_login'] = $row['admin_id'];
-                            header("location: fix_main_admin.php");
+                            header("location: admin.php");
                         } else {
                             $_SESSION['error'] = 'รหัสผ่านผิด';
                             header("location: login_admin.php");
