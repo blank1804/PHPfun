@@ -35,15 +35,10 @@ if (isset($_GET['delete'])) {
 <?php require_once('nav_admin.php'); ?>
 
 <body id="page-top">
-    <!-- <div class="card bg-dark text-white mycard">
-        <img class="card-img" src="https://i.imgur.com/R3i60VV.jpg" alt="Card image">
-        <div class="card-img-overlay">
-        </div>
-    </div> -->
 
     <header class="masthead bg-primary text-white text-center">
 
-    </header>
+</header>
 
     <section class="page-section  mb-0">
             <div class="container">
@@ -70,7 +65,7 @@ if (isset($_GET['delete'])) {
                             ?>
                                     <tr>
                                         <td><?php echo $post['post_title']; ?></td>
-                                        <td width="250px"><img class="rounded" width="100%" src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
+                                        <td class="listimg"><img class="rounded" width="100%" src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
                                         <td> <?php echo substr($post['post_detail'], 0, 300) . ((strlen($post['post_detail']) > 300) ? '...' : ''); ?> </td>
                                         <td><?php echo $post['post_author']; ?></td>
                                     </tr>

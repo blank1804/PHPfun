@@ -52,7 +52,7 @@ require_once 'config/db.php';
                             ?>
                                     <tr>
                                         <td><?php echo $post['post_title']; ?></td>
-                                        <td width="250px"><img class="rounded" width="100%" src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
+                                        <td class="listimg"><img class="rounded b"  src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
                                         <td> <?php echo substr($post['post_detail'], 0, 300) . ((strlen($post['post_detail']) > 300) ? '...' : ''); ?> </td>
                                         <td><?php echo $post['post_author']; ?></td>
                                     </tr>

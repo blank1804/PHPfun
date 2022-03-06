@@ -32,7 +32,7 @@ if (isset($_POST['ulogin'])) {
                 if ($user_email == $row['user_email'] || $user_email == $row['admin_email']) {
                     if (($user_password == $row['user_password'])) {
                         $_SESSION['user_login'] = $row['user_id'];
-                        header("location: user.php");
+                        header("location: main_user.php");
                     } elseif ($user_email == $row['admin_email']) {
                         if (($user_password == $row['admin_password'])) {
                             $_SESSION['admin_login'] = $row['admin_id'];

@@ -21,20 +21,17 @@ require_once 'config/db.php'
 <body>
 
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark sticky-top" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php" style="font-size: 26px;">ระบบลงทะเบียนศิษย์เก่า</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                </div>
-            </div>
-            <form class="d-flex">
-                <a href="user_register.php" class="btn btn-primary btn-lg btn-space tx-size" role="button">สมัครสมาชิก</a>
-                <a href="login_user.php" class="btn btn-primary btn-lg btn-space tx-size" role="button">เข้าสู่ระบบ User</a>
-            </form>
+            <a class="navbar-brand" href="index.php"">ระบบลงทะเบียนศิษย์เก่า</a>
+                <button class=" navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+                </button>
+                <form class="d-flex">
+                    <a href="user_register.php" class="btn btn-primary btn-lg btn-space tx-size" role="button">สมัครสมาชิก</a>
+                    <a href="login_user.php" class="btn btn-primary btn-lg btn-space tx-size" role="button">เข้าสู่ระบบ</a>
+                </form>
         </div>
     </nav>
 

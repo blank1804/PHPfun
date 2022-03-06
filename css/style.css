@@ -1,3 +1,57 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #1abc9c;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #1abc9c;
+  --bs-secondary: #2c3e50;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 83, 211, 246;
+  --bs-secondary-rgb: 44, 62, 80;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+
 html{
     margin: 0;
     height: 100%;
@@ -8,12 +62,11 @@ html{
 
 .btn-space {
     margin-right: 5px;
-    
 }
 
 .tx-size {
     font-size: 16px;
-    width: 180px;
+    width: 150px;
     border: 0px solid;
 }
 
@@ -26,6 +79,15 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
    }
+
+  ::-webkit-scrollbar {
+      width: 0;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+      background: #FF0000;
+  }
 
 
 
@@ -71,15 +133,7 @@ body {
     text-align: center;
 }
 
-.mc3{
-    margin: auto;
-    width: 70%;
-    border: 3px solid rgb(142, 168, 142);
-    padding: 10px;
-    margin-top: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    border-radius: 3px;
-}
+
 
 
 .card-img-overlay{
@@ -96,14 +150,6 @@ body {
 
 
 
-.html::-webkit-scrollbar {
-    display: none;
-  }
-  .html {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-
   .page-section .page-section-heading {
     font-size: 2.25rem;
     line-height: 2rem;
@@ -114,3 +160,159 @@ body {
       line-height: 2.5rem;
     }
   }
+
+  .btnlogout {
+    font-weight: bold;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    margin-top:5px;
+  }
+  
+  
+  #mainNav .navbar-nav li > a {
+    text-transform: capitalize;
+    color: #333;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  #mainNav .navbar-nav li > a:hover, #mainNav .navbar-nav li > a:focus {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #mainNav .navbar-nav li.active > a {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  
+  footer{
+    position: sticky;
+    top: calc( 110vh - 100px );
+    text-align: center;
+    color: aliceblue;
+    padding-top: 20px;
+    height: 70px;
+    background-color: #1a1a1c !important;
+  }
+
+  .masthead {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/046/781/995/large/volodymyr-shtohun-shotgun-call-for-peace.jpg?1645980783");
+  }
+  .masthead .masthead-heading {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.25rem;
+  }
+  .masthead .masthead-avatar {
+    width: 15rem;
+  }
+  
+  @media (min-width: 992px) {
+    .masthead {
+      padding-top: calc(6rem + 104px);
+      padding-bottom: 6rem;
+    }
+    .masthead .masthead-heading {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
+    .masthead .masthead-subheading {
+      font-size: 1.5rem;
+    }
+  }
+
+
+  #mainNav {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+  }
+  #mainNav .navbar-brand {
+    color: #fff;
+  }
+  #mainNav .navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+  }
+  #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #f55d50 !important;
+  }
+  #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+    color: #fff;
+  }
+  #mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: #f55d50 !important;
+  }
+  @media (min-width: 992px) {
+    #mainNav {
+      transition: padding-top 0.3s, padding-bottom 0.3s;
+    }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+    }
+    #mainNav .navbar-nav {
+      margin-top: 0;
+    }
+    
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+      color: #fff;
+      background: #1abc9c;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+      color: #fff;
+      background: #1abc9c;
+    }
+
+  }
+
+  .page-section {
+    padding: 6rem 0;
+  }
+  .page-section .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    .page-section .page-section-heading {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+  
+
+
+  .mc3{
+    margin: auto;
+    width: 70%;
+    border: 3px solid rgb(142, 168, 142);
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+}
+
+
+  thead{
+    background-color: #f55d50 !important;
+    font-size: 20px;  }
+
+.divider-custom{
+  margin-bottom: 10px;
+}
+
+img.a{
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 5px;
+
+}
+img.b{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}

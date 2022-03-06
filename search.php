@@ -16,13 +16,12 @@
 
         <div class="mc3">
 
-            <form class="row g-8" action="" method="get">
+            <form class="row" action="" method="get">
                 <div class="col-auto">
-
-                    <input type="text" href="search.php" class="form-control" id="search" name="q" placeholder="ค้นหา">
+                    <button type="submit" name="submit" class="btn btn-primary mb-3 tx-size">ค้นหา</button>
                 </div>
                 <div class="col-auto">
-                    <button type="submit" name="submit" class="btn btn-primary mb-3">ค้นหา</button>
+                    <input type="text" href="search.php" class="form-control" id="search" name="q" placeholder="ค้นหา">
                 </div>
             </form>
 

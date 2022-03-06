@@ -28,12 +28,8 @@ if (isset($_GET['delete'])) {
     <title>Admin Dashboard</title>
 </head>
 <?php require_once('nav_admin.php'); ?>
+
 <body>
-    <!-- <div class="card bg-dark text-white mycard">
-        <img class="card-img" src="https://i.imgur.com/R3i60VV.jpg" alt="Card image">
-        <div class="card-img-overlay">
-        </div>
-    </div> -->
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
 
@@ -64,9 +60,11 @@ if (isset($_GET['delete'])) {
                 ?>
             </div>
         <?php } ?>
-        <div class="container">
-            <div class="mecard">
-                <a href="admin_post.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มข่าวสาร</a>
+        <section class="page-section  mb-0">
+            <div class="container">
+                <div class="divider-custom">
+                    <a href="admin_post.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มข่าวสาร</a>
+                </div>
                 <div class="table-wrapper-scroll-y my-custom-scrollbar">
                     <table class="table caption-top table-responsive" style="text-align: center;">
                         <thead>
@@ -108,7 +106,7 @@ if (isset($_GET['delete'])) {
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

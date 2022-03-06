@@ -61,7 +61,11 @@ if (isset($_GET['delete'])) {
         <?php } ?>
 
         <div class="mc3">
-            <a href="add_admin.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มผู้ดูแลระบบ</a>
+            <div class="row">
+                <div class="col-6 col-sm-2">
+                <button class="btn btn-primary mb-3 tx-size" onclick="document.location='add_admin.php'">เพิ่มผู้ดูแล</button>
+                </div>
+            </div>
 
             <table class="table table-striped table-hover maintable caption-top">
                 <thead>

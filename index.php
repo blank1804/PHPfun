@@ -16,12 +16,12 @@ require_once 'config/db.php'
     <title>Dashboard</title>
 </head>
 
-<body>
+<body onload="myModal();">
 
 
     <nav class="navbar navbar-expand-lg bg-dark sticky-top" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="user.php"">ระบบลงทะเบียนศิษย์เก่า</a>
+            <a class="navbar-brand" href="#"">ระบบลงทะเบียนศิษย์เก่า</a>
                 <button class=" navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -88,6 +88,25 @@ require_once 'config/db.php'
     </main>
 
 
+
+    <div class="modal hide fade" id="myModal">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">×</a>
+            <h3>Modal header</h3>
+        </div>
+        <div class="modal-body">
+            <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn btn-primary">Close</a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+        myModal.toggle()
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

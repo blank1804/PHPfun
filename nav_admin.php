@@ -9,7 +9,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="main_admin.php">จัดการข่าวสาร</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="list_user.php">ข้อมูลสมาชิก</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="user_allow.php">การอนุมัติสมาชิก</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="list_admin.php">ข้อมูลผู้ดูแล</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="user_allow.php">การอนุมัติสมาชิก</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="btn btn-danger px-0 px-lg-3 btnlogout" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</a></li>
                 </ul>

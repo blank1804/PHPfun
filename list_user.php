@@ -32,6 +32,7 @@ if (isset($_GET['delete'])) {
     <title>User List</title>
 </head>
 <?php require_once('nav_admin.php'); ?>
+
 <body>
     <main>
         <?php if (isset($_SESSION['error'])) { ?>
@@ -63,20 +64,14 @@ if (isset($_GET['delete'])) {
 
 
         <div class="mc3">
-
-            <form class="row g-4" action="search.php" method="post">
-                <div class="col-auto">
+            <div class="row">
+                <form class="col-6 col-sm-2" action="search.php" method="post">
                     <button type="submit" name="submit" class="btn btn-primary mb-3 tx-size">ค้นหาสมาชิก</button>
+                </form>
+                <div class="col-6 col-sm-2">
+                <button class="btn btn-primary mb-3 tx-size" onclick="document.location='add_user.php'">เพิ่มสมาชิก</button>
                 </div>
-            </form>
-
-            <button  href="add_user.php" class="btn btn-success mb-3 tx-size">ค้นหาสมาชิก</button>
-
-            <!-- <a href="add_user.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มสมาชิก</a> -->
-
-
-
-
+            </div>
 
             <table class="table table-striped table-hover maintable caption-top">
                 <thead>
@@ -130,6 +125,7 @@ if (isset($_GET['delete'])) {
     <script src="js/scripts.js"></script>
 </body>
 <footer>
-  <p class="text-center">Copyright &copy; BLANK</p>
+    <p class="text-center">Copyright &copy; BLANK</p>
 </footer>
+
 </html>

@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-dark sticky-top" id="mainNav">
+<nav class="navbar navbar-expand-lg  sticky-top" id="mainNav" style="background-color: #0e0a18;">
     <div class="container-fluid">
-        <a class="navbar-brand" href="user.php"">ระบบลงทะเบียนศิษย์เก่า</a>
+        <a class="navbar-brand" href="main_user.php"">ระบบลงทะเบียนศิษย์เก่า</a>
                 <button class=" navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>

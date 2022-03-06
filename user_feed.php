@@ -36,59 +36,59 @@ if (isset($_GET['delete'])) {
 </head>
 
 <body>
-<?php require_once 'nav_user.php'?>
+    <?php require_once 'nav_user.php' ?>
 
-<header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center">
 
-</header>
+    </header>
     <main>
-
-
-        <div class="container">
-            <div class="mecard">
-            <a href="user_post.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มข่าวสาร</a>
-                <a href="user_feed.php" class="btn btn-success btn-lg btn-space tx-size" role="button">ข่าวสารของฉัน</a>
-                <a href="main_user.php" class="btn btn-success btn-lg btn-space tx-size" role="button">ข่าวสารทั้งหมด</a>
+        <section class="page-section  mb-0">
+            <div class="container">
+                <div class="divider-custom">
+                    <a href="user_post.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มข่าวสาร</a>
+                    <a href="user_feed.php" class="btn btn-success btn-lg btn-space tx-size" role="button">ข่าวสารของฉัน</a>
+                    <a href="main_user.php" class="btn btn-success btn-lg btn-space tx-size" role="button">ข่าวสารทั้งหมด</a>
+                </div>
                 <div class="table-wrapper-scroll-y my-custom-scrollbar">
-                <table class="table caption-top table-hover" table-responsive" style="text-align: center;">
-                    <thead>
-                        <tr>
-                            <th scope="col" style="width: 220px;">หัวข้อ</th>
-                            <th scope="col" style="width: 220px;">รูป</th>
-                            <th scope="col" style="width: 1000px;">รายละเอียด</th>
-                            <th scope="col" style="width: 220px;">ผู้เขียน</th>
-                            <th scope="col" style="width: 320px;">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        $stmt = $conn->query("SELECT * FROM post_db WHERE post_author = '$myid'");
-                        $stmt->execute();
-                        $post_db = $stmt->fetchAll();
+                    <table class="table caption-top table-hover" table-responsive" style="text-align: center;">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 220px;">หัวข้อ</th>
+                                <th scope="col" style="width: 220px;">รูป</th>
+                                <th scope="col" style="width: 1000px;">รายละเอียด</th>
+                                <th scope="col" style="width: 220px;">ผู้เขียน</th>
+                                <th scope="col" style="width: 320px;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $stmt = $conn->query("SELECT * FROM post_db WHERE post_author = '$myid'");
+                            $stmt->execute();
+                            $post_db = $stmt->fetchAll();
 
-                        if (!$post_db) {
-                            echo "<p><td colspan='6' class='text-center'>No data available</td></p>";
-                        } else {
-                            foreach ($post_db as $post) {
-                        ?>
-                                <tr>
-                                    <td><?php echo $post['post_title']; ?></td>
-                                    <td width="250px"><img class="rounded" width="100%" src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
-                                    <td> <?php echo substr($post['post_detail'], 0, 300) . ((strlen($post['post_detail']) > 300) ? '...' : ''); ?> </td>
-                                    <td><?php echo $post['post_author']; ?></td>
-                                    <td>
-                                        <a href="main_post_user.php?post_id=<?php echo $post['post_id']; ?>" class="btn btn-success">อ่านต่อ</a>
-                                        <a href="user_edit_feed.php?post_id=<?php echo $post['post_id']; ?>" class="btn btn-warning">แก้ไข</a>
-                                        <a onclick="return confirm('ต้องการที่จะลบข่าวสารนี้ใช่ไหม?');" href="?delete=<?php echo $post['post_id']; ?>" class="btn btn-danger">ลบ</a>
-                                    </td>
-                                </tr>
-                        <?php }
-                        } ?>
-                    </tbody>
-                </table>
+                            if (!$post_db) {
+                                echo "<p><td colspan='6' class='text-center'>No data available</td></p>";
+                            } else {
+                                foreach ($post_db as $post) {
+                            ?>
+                                    <tr>
+                                        <td><?php echo $post['post_title']; ?></td>
+                                        <td width="250px"><img class="rounded" width="100%" src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
+                                        <td> <?php echo substr($post['post_detail'], 0, 300) . ((strlen($post['post_detail']) > 300) ? '...' : ''); ?> </td>
+                                        <td><?php echo $post['post_author']; ?></td>
+                                        <td>
+                                            <a href="main_post_user.php?post_id=<?php echo $post['post_id']; ?>" class="btn btn-success">อ่านต่อ</a>
+                                            <a href="user_edit_feed.php?post_id=<?php echo $post['post_id']; ?>" class="btn btn-warning">แก้ไข</a>
+                                            <a onclick="return confirm('ต้องการที่จะลบข่าวสารนี้ใช่ไหม?');" href="?delete=<?php echo $post['post_id']; ?>" class="btn btn-danger">ลบ</a>
+                                        </td>
+                                    </tr>
+                            <?php }
+                            } ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </div>
+        </section>
 
 
 
@@ -101,6 +101,7 @@ if (isset($_GET['delete'])) {
 
 </body>
 <footer>
-  <p class="text-center">Copyright &copy; BLANK</p>
+    <p class="text-center">Copyright &copy; BLANK</p>
 </footer>
+
 </html>

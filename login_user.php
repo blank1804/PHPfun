@@ -14,10 +14,10 @@ require_once 'config/db.php'
     <link href="css/styles.css" rel="stylesheet">
     <title>Login</title>
 </head>
-
+<body>
 <nav class="navbar navbar-expand-lg bg-dark sticky-top" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="user.php"">ระบบลงทะเบียนศิษย์เก่า</a>
+            <a class="navbar-brand" href="index.php"">ระบบลงทะเบียนศิษย์เก่า</a>
                 <button class=" navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>

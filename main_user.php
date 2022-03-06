@@ -19,41 +19,43 @@ require_once 'config/db.php';
 </head>
 
 <body>
-<?php require_once('nav_user.php'); ?>
+    <?php require_once('nav_user.php'); ?>
 
-<header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center">
 
-</header>
+    </header>
     <main>
-    <?php if (isset($_SESSION['error'])) { ?>
-                                    <div class="alert alert-danger" role="alert">
-                                        <?php
-                                        echo $_SESSION['error'];
-                                        unset($_SESSION['error']);
-                                        ?>
-                                    </div>
-                                <?php } ?>
-                                <?php if (isset($_SESSION['success'])) { ?>
-                                    <div class="alert alert-success" role="alert">
-                                        <?php
-                                        echo $_SESSION['success'];
-                                        unset($_SESSION['success']);
-                                        ?>
-                                    </div>
-                                <?php } ?>
-                                <?php if (isset($_SESSION['warning'])) { ?>
-                                    <div class="alert alert-warning" role="alert">
-                                        <?php
-                                        echo $_SESSION['warning'];
-                                        unset($_SESSION['warning']);
-                                        ?>
-                                    </div>
-                                <?php } ?>
+        <?php if (isset($_SESSION['error'])) { ?>
+            <div class="alert alert-danger" role="alert">
+                <?php
+                echo $_SESSION['error'];
+                unset($_SESSION['error']);
+                ?>
+            </div>
+        <?php } ?>
+        <?php if (isset($_SESSION['success'])) { ?>
+            <div class="alert alert-success" role="alert">
+                <?php
+                echo $_SESSION['success'];
+                unset($_SESSION['success']);
+                ?>
+            </div>
+        <?php } ?>
+        <?php if (isset($_SESSION['warning'])) { ?>
+            <div class="alert alert-warning" role="alert">
+                <?php
+                echo $_SESSION['warning'];
+                unset($_SESSION['warning']);
+                ?>
+            </div>
+        <?php } ?>
 
-        <div class="container">
-            <div class="mecard">
-                <a href="user_post.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มข่าวสาร</a>
-                <a href="user_feed.php" class="btn btn-success btn-lg btn-space tx-size" role="button">ข่าวสารของฉัน</a>
+        <section class="page-section  mb-0">
+            <div class="container">
+                <div class="divider-custom">
+                    <a href="user_post.php" class="btn btn-success btn-lg btn-space tx-size" role="button">เพิ่มข่าวสาร</a>
+                    <a href="user_feed.php" class="btn btn-success btn-lg btn-space tx-size" role="button">ข่าวสารของฉัน</a>
+                </div>
                 <div class="table-wrapper-scroll-y my-custom-scrollbar">
                     <table class="table caption-top table-hover" table-responsive" style="text-align: center;">
                         <thead>
@@ -78,7 +80,7 @@ require_once 'config/db.php';
                             ?>
                                     <tr>
                                         <td><?php echo $post['post_title']; ?></td>
-                                        <td width="250px"><img class="rounded" width="100%" src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
+                                        <td width="250px"><img class="rounded b"  src="uploads/<?php echo $post['post_img']; ?>" alt=""></td>
                                         <td> <?php echo substr($post['post_detail'], 0, 300) . ((strlen($post['post_detail']) > 300) ? '...' : ''); ?> </td>
                                         <td><?php echo $post['post_author']; ?></td>
                                         <td>
@@ -91,7 +93,7 @@ require_once 'config/db.php';
                     </table>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -101,6 +103,7 @@ require_once 'config/db.php';
 
 </body>
 <footer>
-  <p class="text-center">Copyright &copy; BLANK</p>
+    <p class="text-center">Copyright &copy; BLANK</p>
 </footer>
+
 </html>

@@ -26,11 +26,12 @@ if (isset($_GET['post_id'])) {
 <?php require_once('nav_user.php'); ?>
 <body>
         <div class="card" style="margin: 100px;">
-            <div class="card-header">
+            <div class="card-header" style="font-size: 20px;">
+            <a type="button" class="btn-close" href="main_user.php" aria-label="Close"></a>
                 <?php echo $row['post_title']; ?>
             </div>
             <div class="imgnpost">
-           <img class="rounded" display= "block" margin-left= "auto" margin-right= "auto" width = "500px" src="uploads/<?php echo $row['post_img']; ?>" alt="">
+           <img class="rounded a" display= "block" margin-left= "auto" margin-right= "auto"  src="uploads/<?php echo $row['post_img']; ?>" alt="">
            </div>
             <div class="card-body" style="padding: 20px;">
                 <blockquote class="blockquote mb-0">
