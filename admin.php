@@ -35,10 +35,15 @@ if (isset($_GET['delete'])) {
 <?php require_once('nav_admin.php'); ?>
 
 <body id="page-top">
+    <!-- <div class="card bg-dark text-white mycard">
+        <img class="card-img" src="https://i.imgur.com/R3i60VV.jpg" alt="Card image">
+        <div class="card-img-overlay">
+        </div>
+    </div> -->
 
     <header class="masthead bg-primary text-white text-center">
 
-</header>
+    </header>
 
     <section class="page-section  mb-0">
             <div class="container">
